@@ -11,12 +11,16 @@ body {
 /* Navbar */
 .navbar {
   display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 20px;
   background-color: #1e3a8a;
-  padding: 10px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  padding: 10px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
 }
 
 .navbar ul {
@@ -27,22 +31,10 @@ body {
   padding: 0;
 }
 
-.navbar a {
+.navbar ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 5px;
-  transition: background 0.3s;
-}
-
-.navbar a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Header */
-header {
-  padding: 30px 20px;
 }
 
 /* Secciones */
@@ -82,14 +74,13 @@ header {
 }
 
 .galeria img {
-  width: 20px !important;
-  height: auto !important;
-  max-width: 20px !important;
-  max-height: 20px !important;
+  width: 20px;
+  height: auto;
+  max-width: 20px;
+  max-height: 20px;
   object-fit: cover;
   border-radius: 6px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
-  display: block;
   margin: 5px auto;
 }
 
@@ -103,29 +94,32 @@ footer {
 .social-buttons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 15px;
   margin: 15px 0;
 }
 
-.btn {
-  width: 40px;
-  height: 40px;
-  background-color: #333;
-  color: white;
-  border-radius: 50%;
-  font-size: 18px;
+.social-buttons .btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  gap: 8px;
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
   transition: background 0.3s;
 }
 
-.btn.facebook { background-color: #3b5998; }
-.btn.instagram { background-color: #e1306c; }
-.btn.linkedin  { background-color: #0077b5; }
+.social-buttons .btn:hover {
+  background-color: #e0e0e0;
+}
 
-.btn:hover {
-  opacity: 0.85;
+.social-buttons .btn img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
 }
 
 .copy {
