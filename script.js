@@ -1,21 +1,10 @@
-// Mostrar mensaje en consola cuando se carga el sitio
-console.log("Sitio web de ACEIG UNSA cargado correctamente.");
+// Confirmación en consola
+console.log("Sitio de ACEIG UNSA cargado con éxito.");
 
-// Efecto suave al hacer hover en las imágenes (ya aplicado con CSS, pero aquí puedes agregar lógica futura)
-const imagenes = document.querySelectorAll(".galeria img");
-
-imagenes.forEach(img => {
+// Hover click en imágenes
+document.querySelectorAll(".galeria img").forEach((img) => {
   img.addEventListener("click", () => {
-    alert("¡Esta es una de nuestras actividades destacadas!");
+    alert("Actividad destacada del capítulo ACEIG UNSA.");
   });
 });
 
-// Scroll suave para anclas (si luego agregas menú de navegación)
-document.querySelectorAll('a[href^="#"]').forEach(enlace => {
-  enlace.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
