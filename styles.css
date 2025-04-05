@@ -1,4 +1,4 @@
-/* Fuente moderna */
+/* General */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -7,7 +7,7 @@ body {
   color: #333;
 }
 
-/* Header con sombra y estilo limpio */
+/* Header */
 header {
   background-color: #ffffff;
   padding: 30px 20px;
@@ -16,17 +16,17 @@ header {
 }
 
 .logo {
-  width: 90px;
+  width: 70px; /* Tamaño reducido del logo */
   margin-bottom: 10px;
 }
 
 h1 {
   margin: 10px 0 5px;
-  font-size: 28px;
+  font-size: 26px;
   color: #1e3a8a;
 }
 
-/* Tarjetas con diseño suave */
+/* Cards */
 .card {
   background-color: white;
   margin: 40px auto;
@@ -41,7 +41,7 @@ h1 {
   margin-bottom: 15px;
 }
 
-/* Misión y Visión en columnas */
+/* Misión y Visión */
 .doble {
   display: flex;
   flex-direction: column;
@@ -57,7 +57,7 @@ h1 {
   }
 }
 
-/* Galería moderna */
+/* Galería */
 .galeria {
   display: flex;
   flex-wrap: wrap;
@@ -66,7 +66,7 @@ h1 {
 }
 
 .galeria img {
-  width: 180px;
+  width: 140px; /* Tamaño más pequeño de actividades */
   border-radius: 8px;
   transition: transform 0.3s ease;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -76,7 +76,7 @@ h1 {
   transform: scale(1.05);
 }
 
-/* Footer con botones circulares */
+/* Footer */
 footer {
   background-color: #ffffff;
   padding: 30px 20px;
