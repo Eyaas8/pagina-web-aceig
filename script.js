@@ -1,20 +1,21 @@
-// Mostrar mensaje en la consola al cargar la página
-window.addEventListener('DOMContentLoaded', () => {
-    console.log("Bienvenido a la página oficial de ACEIG UNSA 🌋🪨");
+// Mostrar mensaje en consola cuando se carga el sitio
+console.log("Sitio web de ACEIG UNSA cargado correctamente.");
+
+// Efecto suave al hacer hover en las imágenes (ya aplicado con CSS, pero aquí puedes agregar lógica futura)
+const imagenes = document.querySelectorAll(".galeria img");
+
+imagenes.forEach(img => {
+  img.addEventListener("click", () => {
+    alert("¡Esta es una de nuestras actividades destacadas!");
+  });
 });
 
-// Seleccionar todos los enlaces de redes sociales
-const enlaces = document.querySelectorAll('.iconos a');
-
-// Agregar efectos al pasar el mouse
-enlaces.forEach((enlace) => {
-    enlace.addEventListener('mouseover', () => {
-        enlace.style.transform = 'scale(1.1)';
-        enlace.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.2)';
+// Scroll suave para anclas (si luego agregas menú de navegación)
+document.querySelectorAll('a[href^="#"]').forEach(enlace => {
+  enlace.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
     });
-
-    enlace.addEventListener('mouseout', () => {
-        enlace.style.transform = 'scale(1)';
-        enlace.style.boxShadow = 'none';
-    });
+  });
 });
