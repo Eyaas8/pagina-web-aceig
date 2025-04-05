@@ -90,7 +90,7 @@ header h1 {
 }
 
 .galeria img {
-  width: 5px;   
+  width: 1px;   
   height: auto;
   border-radius: 6px;
   transition: transform 0.3s ease;
@@ -98,7 +98,7 @@ header h1 {
 }
 
 .galeria img:hover {
-  transform: scale(0.05);
+  transform: scale(0.001);
 }
 
 footer {
