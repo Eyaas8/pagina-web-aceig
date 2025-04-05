@@ -1,33 +1,81 @@
+/* Estilo general */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9; /* fondo claro */
   color: #333;
 }
 
+/* Encabezado */
 header {
-  background-color: #222;
-  color: white;
+  background-color: #ffffff;
+  color: #222;
   padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .logo {
-  width: 100px;
+  width: 120px;
   height: auto;
+  margin-bottom: 10px;
+}
+
+/* Galería de actividades */
+#actividades {
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+#actividades h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .galeria img {
   width: 300px;
-  margin: 10px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
 }
 
-footer {
-  background-color: #333;
-  color: white;
-  padding: 15px;
+.galeria img:hover {
+  transform: scale(1.05);
 }
+
+/* Pie de página */
+footer {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+}
+
+footer .redes {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .redes a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+footer .redes a:hover {
+  text-decoration: underline;
+}
+
 
