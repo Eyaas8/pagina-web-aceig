@@ -1,10 +1,8 @@
-// Confirmación en consola
-console.log("Sitio de ACEIG UNSA cargado con éxito.");
+console.log("Sitio web ACEIG UNSA cargado correctamente.");
 
-// Hover click en imágenes
+// Mensaje al hacer clic en las imágenes
 document.querySelectorAll(".galeria img").forEach((img) => {
   img.addEventListener("click", () => {
-    alert("Actividad destacada del capítulo ACEIG UNSA.");
+    alert("¡Esta es una actividad reciente de ACEIG UNSA!");
   });
 });
-
