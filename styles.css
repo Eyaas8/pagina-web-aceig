@@ -1,118 +1,121 @@
-/* General */
+/* Fuente moderna */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fdfdfd;
+  background: linear-gradient(to right, #f0f4f8, #e6edf3);
   color: #333;
-  line-height: 1.6;
 }
 
-/* Header */
+/* Header con sombra y estilo limpio */
 header {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 30px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
-  width: 100px;
-  height: auto;
+  width: 90px;
   margin-bottom: 10px;
 }
 
-/* Secciones */
-section {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-section h2 {
+h1 {
+  margin: 10px 0 5px;
   font-size: 28px;
-  margin-bottom: 15px;
   color: #1e3a8a;
 }
 
-#acerca p,
-#mision-vision p {
-  font-size: 18px;
+/* Tarjetas con diseño suave */
+.card {
+  background-color: white;
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-#mision-vision {
+.card h2 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+/* Misión y Visión en columnas */
+.doble {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
-
 @media (min-width: 768px) {
-  #mision-vision {
+  .doble {
     flex-direction: row;
     justify-content: space-between;
   }
-  .mision, .vision {
+  .doble div {
     width: 48%;
   }
 }
 
-/* Galería */
+/* Galería moderna */
 .galeria {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
   justify-content: center;
 }
 
 .galeria img {
-  width: 220px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  width: 180px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .galeria img:hover {
   transform: scale(1.05);
 }
 
-/* Footer */
+/* Footer con botones circulares */
 footer {
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   padding: 30px 20px;
   text-align: center;
+  border-top: 1px solid #ddd;
 }
 
 .social-buttons {
-  margin-top: 10px;
   display: flex;
   justify-content: center;
   gap: 15px;
-  flex-wrap: wrap;
+  margin: 15px 0;
 }
 
 .btn {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: white;
+  border-radius: 50%;
+  font-size: 18px;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 16px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
+  justify-content: center;
   transition: background 0.3s;
 }
 
 .btn.facebook { background-color: #3b5998; }
 .btn.instagram { background-color: #e1306c; }
-.btn.linkedin { background-color: #0077b5; }
+.btn.linkedin  { background-color: #0077b5; }
 
 .btn:hover {
   opacity: 0.85;
 }
 
 .copy {
-  margin-top: 20px;
-  font-size: 14px;
-  color: #666;
+  font-size: 13px;
+  color: #888;
+  margin-top: 10px;
 }
+
 
