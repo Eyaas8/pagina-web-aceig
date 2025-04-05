@@ -1,81 +1,118 @@
-/* Estilo general */
+/* General */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  text-align: center;
-  background-color: #f9f9f9; /* fondo claro */
+  background-color: #fdfdfd;
   color: #333;
+  line-height: 1.6;
 }
 
-/* Encabezado */
+/* Header */
 header {
-  background-color: #ffffff;
-  color: #222;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+  padding: 30px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .logo {
-  width: 120px;
+  width: 100px;
   height: auto;
   margin-bottom: 10px;
 }
 
-/* Galería de actividades */
-#actividades {
+/* Secciones */
+section {
   padding: 40px 20px;
-  background-color: #ffffff;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-#actividades h2 {
+section h2 {
   font-size: 28px;
-  margin-bottom: 20px;
-  color: #222;
+  margin-bottom: 15px;
+  color: #1e3a8a;
 }
 
+#acerca p,
+#mision-vision p {
+  font-size: 18px;
+}
+
+#mision-vision {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  #mision-vision {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .mision, .vision {
+    width: 48%;
+  }
+}
+
+/* Galería */
 .galeria {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 20px;
+  justify-content: center;
 }
 
 .galeria img {
-  width: 300px;
+  width: 220px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
 
 .galeria img:hover {
   transform: scale(1.05);
 }
 
-/* Pie de página */
+/* Footer */
 footer {
-  background-color: #f0f0f0;
-  color: #333;
-  padding: 20px;
+  background-color: #f1f1f1;
+  padding: 30px 20px;
+  text-align: center;
 }
 
-footer .redes {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0;
+.social-buttons {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-footer .redes a {
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 6px;
   text-decoration: none;
-  color: #0077cc;
   font-weight: bold;
+  color: white;
+  transition: background 0.3s;
 }
 
-footer .redes a:hover {
-  text-decoration: underline;
+.btn.facebook { background-color: #3b5998; }
+.btn.instagram { background-color: #e1306c; }
+.btn.linkedin { background-color: #0077b5; }
+
+.btn:hover {
+  opacity: 0.85;
 }
 
+.copy {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
 
