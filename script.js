@@ -7,3 +7,4 @@ document.querySelectorAll(".galeria img").forEach((img) => {
   });
 });
 
+
