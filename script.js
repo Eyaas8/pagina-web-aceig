@@ -6,3 +6,4 @@ document.querySelectorAll(".galeria img").forEach((img) => {
     alert("¡Esta es una actividad reciente de ACEIG UNSA!");
   });
 });
+
